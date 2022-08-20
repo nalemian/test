@@ -1,0 +1,18 @@
+function findRights(arr, registers) {
+    let searched = Math.pow(2, registers) - 1;
+    let arr1 = [];
+    for (let i = arr.length - 1; i >= 1; i--) {
+        arr1.push(arr[i]);
+        for (let j = i - 1; j >= 0; j--) {
+            let value = arr[i];
+            for (let numeric = 0; numeric < j; numeric++) {
+                value = (value | parseInt(arr[j - numeric], 2)).toString(2);
+                arr1.push(arr[j - numeric]);
+                if (value == searched.toString(2)) {
+                    console.log(arr1);
+                }
+            }
+            arr1 = [arr[i]];
+        }
+    }
+}
