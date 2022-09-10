@@ -1,4 +1,8 @@
-function checkForm(el) {
+document.getElementById("main-form").addEventListener("submit", checkForm); //на объект вешается обработчик событий addEventListener, все это вместо onsubmit
+
+function checkForm(event) { //event - само событие
+    event.preventDefault(); //с помощью этого отключается перезагрузка страницы, event - объект
+    var el = document.getElementById("main-form");
     var name = el.name.value;
     //или то же самое будет с document.getElementById('name').value
     var pass = el.pass.value;
@@ -21,5 +25,5 @@ function checkForm(el) {
         alert("Все данные корректно заполнены");
         window.location = "https://ru.wikipedia.org/wiki/Кошка" //если все заполнено правильно, переадресуется на страницу википедии
     }
-    return false; //если введу true, то страница просто перезагрузится еще до переадресации
+    //не использую атрибуты, поэтому нет смысла от return
 }
