@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-
-
-    <div id="mainButton" style="position:relative; left: 96%;">0</div>
-    <button style="height: 80px; width: 24%; bottom: 40%; left: 75%;">AC</button>
-    <button style="height: 80px; width: 24%; bottom: 40%; left: 50%;">del</button>
-    <button style="height: 80px; width: 24%; bottom: 40%; left: 25%;">%</button>
-    <button style="height: 80px; width: 24%; bottom: 40%; left: 0%;">/</button>
-    <button style="height: 80px; width: 24%; bottom: 30%; left: 75%;" onclick="onClickButton(this)">7</button>
-    <button style="height: 80px; width: 24%; bottom: 30%; left: 50%;" onclick="onClickButton(this)">8</button>
-    <button style="height: 80px; width: 24%; bottom: 30%; left: 25%;" onclick="onClickButton( this)">9</button>
-    <button style="height: 80px; width: 24%; bottom: 30%; left: 0%;">x</button>
-    <button style="height: 80px; width: 24%; bottom: 20%; left: 75%;" onclick="onClickButton( this)">4</button>
-    <button style="height: 80px; width: 24%; bottom: 20%; left: 50%;" onclick="onClickButton( this)">5</button>
-    <button style="height: 80px; width: 24%; bottom: 20%; left: 25%;" onclick="onClickButton(this)">6</button>
-    <button style="height: 80px; width: 24%; bottom: 20%; left: 0%;">-</button>
-    <button style="height: 80px; width: 24%; bottom: 10%; left: 75%; " onclick="onClickButton(this)">1</button>
-    <button style="height: 80px; width: 24%; bottom: 10%; left: 50%;" onclick="onClickButton(this)">2</button>
-    <button style="height: 80px; width: 24%; bottom: 10%; left: 25%;" onclick="onClickButton(this)">3</button>
-    <button style="height: 80px; width: 24%; bottom: 10%; left: 0%;">+</button>
-    <button style="height: 80px; width: 24%; position: relative; top: 0%; left: 72.8%; ">=</button> 
-    <button style="height: 80px; width: 24%; position: relative; left: 24.3%;" onclick="onClickButton(this)">,</button>
-    <button style="height: 80px; width: 24%; position: relative; bottom: 0%; right: 24.3%;" onclick="onClickButton(this)">0</button> 
+    <div id="mainButton" style="border:1px solid black; width: 96.65%; text-align: end; margin-bottom: 2px;" >0</div>
+    <button class="left">AC</button>
+    <button class="middleLeft">del</button>
+    <button class="middleRight">%</button>
+    <button class="right">/</button>
+    <button class="left" onclick="onClickButton(this)">7</button>
+    <button class="middleLeft" onclick="onClickButton(this)">8</button>
+    <button class="middleRight" onclick="onClickButton( this)">9</button>
+    <button class="right">x</button>
+    <button class="left" onclick="onClickButton( this)">4</button>
+    <button class="middleLeft" onclick="onClickButton( this)">5</button>
+    <button class="middleRight" onclick="onClickButton(this)">6</button>
+    <button class="right">-</button>
+    <button class="left" onclick="onClickButton(this)">1</button>
+    <button class="middleLeft" onclick="onClickButton(this)">2</button>
+    <button class="middleRight" onclick="onClickButton(this)">3</button>
+    <button class="right">+</button>
+    <button style="height: 80px; width: 24%; position: relative; bottom:0.1px; left: 72.8%; ">=</button> 
+    <button style="height: 80px; width: 24%; position: relative; bottom:0.1px; left: 24.25%;" onclick="onClickButton(this)">,</button>
+    <button style="height: 80px; width: 24%; position: relative; bottom:0.1px; right: 24.25%;" onclick="onClickButton(this)">0</button> 
 
     <script src="calculator.js"></script>
 

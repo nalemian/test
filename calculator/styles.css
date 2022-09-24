@@ -1,0 +1,32 @@
+
+    .left {
+        display: inline-block;
+        width: 24%;
+        height: 80px;
+        left: 75%;
+        margin-bottom: 2px;
+    }
+    .middleLeft {
+        display: inline-block;
+        width: 24%;
+        height: 80px;
+        left: 50%;
+        margin-bottom: 2px;
+    }
+    .middleRight {
+        display: inline-block;
+        width: 24%;
+        height: 80px;
+        left: 25%;
+        margin-bottom: 2px;
+    }
+    .right {
+        display: inline-block;
+        width: 24%;
+        height: 80px;
+        left: 0%;
+        margin-bottom: 2px;
+    }
+    .none{
+        font-size: 0%;
+    }
