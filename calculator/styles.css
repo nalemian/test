@@ -1,0 +1,33 @@
+    button {
+        width: 24%;
+        height: 80px;
+        margin-bottom: 2px;
+    }
+
+    .left {
+        left: 75%;
+    }
+
+    .middleLeft {
+        left: 50%;
+    }
+
+    .middleRight {
+        left: 25%;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .lower {
+        position: relative;
+        left: 24.25%
+    }
+
+    .top {
+        border: 1px solid black;
+        width: 96.65%;
+        text-align: end;
+        margin-bottom: 2px;
+    }
