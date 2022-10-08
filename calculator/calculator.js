@@ -2,33 +2,37 @@ function onClickButton(element) {
     var stringContent = document.getElementById("output");
     var buttonContent = element.innerHTML;
     if (stringContent.innerHTML.length <= 180) {
-        if (stringContent.innerHTML.length == 1 && buttonContent !== ",") {
+        if (( stringContent.innerHTML=="+" || stringContent.innerHTML=="-" || stringContent.innerHTML=="*" || stringContent.innerHTML=="/") || (stringContent.innerHTML == "0" && buttonContent !== ",")) {
             stringContent.innerHTML = buttonContent;
         } else
             stringContent.innerHTML = stringContent.innerHTML + buttonContent;
     }
 }
 
-var plus =  {
+function reset() {
+    document.getElementById("output").innerHTML="0";
+}
+
+ var plus =  {
  "operation": "+",
  "apply": function (num1,num2){
   return num1 + num2;
  }
 }
 var minus =  {
-    "operation": "+",
+    "operation": "-",
     "apply": function (num1,num2){
      return num1 - num2;
     }
    }
 var multiply =  {
- "operation": "+",
+ "operation": "*",
  "apply": function (num1,num2){
   return num1 * num2;
  }
 }
 var divide =  {
-    "operation": "+",
+    "operation": "/",
     "apply": function (num1,num2){
      return num1 / num2;
     }
@@ -40,12 +44,13 @@ let arr=[plus, minus, multiply, divide];
 function operations(model) {
     oper=model;
     number1=document.getElementById("output").innerHTML;
+    document.getElementById("output").innerHTML=oper.innerHTML;
 }
 
 function equal() {
-    number2=document.getElementById("output").innerHTML;
+    number2=document.getElementById("output");
     for(let i=0; i<4; i++) {
         if(oper.innerHTML == arr[i].operation)
-            arr[i].apply(number1, number2)
+            number2.innerHTML=arr[i].apply(Number(number1), Number(number2.innerHTML))
     }
-}
+} 
