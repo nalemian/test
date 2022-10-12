@@ -7,22 +7,22 @@
 
 <body>
     <div id="output" class="top">0</div>
-    <button class="left" onclick="reset()">AC</button>
-    <button class="middleLeft">del</button>
-    <button class="middleRight">%</button>
-    <button class="right" onclick="operations(this)">/</button>
+    <button class="left operation" onclick="reset()">AC</button>
+    <button class="middleLeft operation">del</button>
+    <button class="middleRight operation">%</button>
+    <button class="right operation" onclick="operations('/')">/</button>
     <button class="left" onclick="onClickButton(this)">7</button>
     <button class="middleLeft" onclick="onClickButton(this)">8</button>
     <button class="middleRight" onclick="onClickButton( this)">9</button>
-    <button class="right" onclick="operations(this)">*</button>
+    <button class="right operation" onclick="operations('*')">*</button>
     <button class="left" onclick="onClickButton( this)">4</button>
     <button class="middleLeft" onclick="onClickButton( this)">5</button>
     <button class="middleRight" onclick="onClickButton(this)">6</button>
-    <button class="right" onclick="operations(this)">-</button>
+    <button class="right operation" onclick="operations('-')">-</button>
     <button class="left" onclick="onClickButton(this)">1</button>
     <button class="middleLeft" onclick="onClickButton(this)">2</button>
     <button class="middleRight" onclick="onClickButton(this)">3</button>
-    <button class="right" onclick="operations(this)">+</button>
+    <button class="right operation" onclick="operations('+')">+</button>
     <button class="lower" onclick="onClickButton(this)">0</button>
     <button class="lower" onclick="onClickButton(this)">,</button>
     <button class="lower" onclick="equal()">=</button>
