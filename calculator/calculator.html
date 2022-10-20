@@ -7,25 +7,63 @@
 
 <body>
     <div id="output" class="top">0</div>
-    <button class="left operation" onclick="reset()">AC</button>
-    <button class="middleLeft operation">del</button>
-    <button class="middleRight operation">%</button>
-    <button class="right operation" onclick="operations('/')">/</button>
+    <div>
+        <button class="left operation" onclick="reset()">AC</button>
+        <button class="middleLeft operation" onclick="del()">del</button>
+        <button class="middleRight operation">%</button>
+        <button class="right operation" onclick="operations('/')">/</button>
+    </div>
+    <div>
     <button class="left" onclick="onClickButton(this)">7</button>
     <button class="middleLeft" onclick="onClickButton(this)">8</button>
     <button class="middleRight" onclick="onClickButton( this)">9</button>
     <button class="right operation" onclick="operations('*')">*</button>
+    </div>
+    <div>
     <button class="left" onclick="onClickButton( this)">4</button>
     <button class="middleLeft" onclick="onClickButton( this)">5</button>
     <button class="middleRight" onclick="onClickButton(this)">6</button>
     <button class="right operation" onclick="operations('-')">-</button>
+    </div>
+    <div>
     <button class="left" onclick="onClickButton(this)">1</button>
     <button class="middleLeft" onclick="onClickButton(this)">2</button>
     <button class="middleRight" onclick="onClickButton(this)">3</button>
     <button class="right operation" onclick="operations('+')">+</button>
-    <button class="lower" onclick="onClickButton(this)">0</button>
-    <button class="lower" onclick="onClickButton(this)">,</button>
-    <button class="lower" onclick="equal()">=</button>
+    </div>
+    <div>
+    <button class="middleLeft" onclick="onClickButton(this)">0</button>
+    <button class="middleRight" onclick="onClickButton(this)">.</button>
+    <button class="right" onclick="equal()">=</button>
+    </div>
+
+    <!-- <div class="left">
+        <button onclick="reset()">AC</button>
+        <button onclick="onClickButton(this)">7</button>
+        <button onclick="onClickButton(this)">4</button>
+        <button onclick="onClickButton(this)">1</button>
+    </div>
+    <div class="middleLeft">
+        <button>del</button>
+        <button onclick="onClickButton(this)">8</button>
+        <button onclick="onClickButton(this)">5</button>
+        <button onclick="onClickButton(this)">2</button>
+        <button onclick="onClickButton(this)">0</button>
+    </div>
+    <div class="middleRight">
+        <button>%</button>
+        <button onclick="onClickButton(this)">9</button>
+        <button onclick="onClickButton(this)">6</button>
+        <button onclick="onClickButton(this)">3</button>
+        <button onclick="onClickButton(this)">,</button>
+    </div>
+    <div class="right">
+        <button onclick="operations('/')">/</button>
+        <button onclick="operations('*')">*</button>
+        <button onclick="operations('-')">-</button>
+        <button onclick="operations('+')">+</button>
+        <button onclick="equal()">=</button>
+    </div> -->
 
     <script src="calculator.js"></script>
 
