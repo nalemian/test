@@ -2,6 +2,7 @@
         width: 24%;
         height: 80px;
         margin-bottom: 2px;
+        display: block;
     }
 
     .left {
@@ -9,25 +10,32 @@
     }
 
     .middleLeft {
-        left: 50%;
+        position: relative;
+        left: 24.2%;
+        bottom: 328px;
     }
 
     .middleRight {
-        left: 25%;
+        position: relative;
+        left: 48.4%;
+        bottom: 738px;
     }
 
     .right {
-        left: 0%;
-    }
-
-    .lower {
         position: relative;
-        left: 24.25%
+        left: 72.6%;
+        bottom: 1148px;
     }
 
-    .top {
+    .output {
         border: 1px solid black;
-        width: 96.65%;
+        width: 96.45%;
         text-align: end;
         margin-bottom: 2px;
+    }
+    .top {
+        width: 96.5%;
+        text-align: end;
+        margin-bottom: 2px;
+        color: gray;
     }
