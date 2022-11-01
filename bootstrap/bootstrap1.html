@@ -10,14 +10,24 @@
     </head>
     <body>
         <div class="container-fluid"> <!-- при  container получится с отступами, константа, при "container-fluid" растянуто по ширине-->
-            <h1>3 разных блока</h1>
-            <div class="row"> <!--ряд--> <!--при изменении размера экрана подстраивается под него-->
-                <div class="col-md-4" style="background-color: #ff999f;">Left</div> <!-- 4, тк всего столбцов 12 => 12/3, столько занимает каждый столбик-->
-                <div class="col-md-4" style="background-color: blueviolet;">Middle</div>
-                <div class="col-md-4" style="background-color: teal;">Right</div>
-            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-4 col-lg-6" style="background-color: #ff999f;">Первый</div> <!--отдельные классы для смартфонов, планшетов,...-->
+                <div class="col-xs-12 col-sm-3 col-md-8 col-lg-6" style="background-color: blueviolet;">Второй</div>
+            </div> <!--при уменьшении размера экрана соотношение двух ячеек будут разными (1:1, 1:2, 3:1, один под другим)-->
         </div> <!--container-fluid растягивается на всю ширину экрана-->
         <!-- классы: xs -самые маленькие, sm, md, lg- самые большие-->
-
+        <div class="row">
+            <div class="col-lg-5 col-lg-push-7" style="background-color: #ff999f;">Первый</div> <!--col-lg-push-7 меняет местами две ячейки-->
+            <div class=" col-lg-7 col-lg-pull-5" style="background-color: blueviolet;">Второй</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-lg-push-7">
+            <div class="row">
+            <div class="col-lg-6" style="background-color: #ff999f;">Первый</div>
+            <div class=" col-lg-6" style="background-color: blueviolet;">Второй</div>
+            </div>
+            </div>
+            <div class=" col-lg-7 col-lg-pull-5" style="background-color: blueviolet;">Второй</div>
+        </div> <!-- второй первый второй-->
     </body>
 </html>
