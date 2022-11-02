@@ -2,27 +2,57 @@
 <html>
     <head>
         <meta charset="utf-8">
-
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg320mUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- stylesheet - подключаемый файл хранит таблицу стилей (CSS)-->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!--anonymous - не передаются параметры доступа (такие как: cookie, сертификат X.509, логин/пароль--> 
+        <title>Bootstrap уроки</title>
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      </head>
     </head>
     <body>
-        <!-- меню-->
-        <nav class="navbar-default"> <!--само меню-->
-            <div class="container-fluid">
-                <div class="navbar-header"> <!--ещё не меню, а заголовок-->
-                    <a href="#" class="navbar-brand">IT</a> <!--navbar-brand - слово будет с опред. стилями (более мягкое)--> <!--с ссылкой получается более красиво-->
-                </div>
-                <div>
-                    <ul class="nav navbar-nav"> <!-- navbar-nav - навигация-->
-                        <li class="active"> <a href="#">Главная</a></li> <!--активный элемент-->
-                        <li> <a href="#">О нас</a></li>
-                        <li> <a href="#">Обратная связь</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <h1>Обычный текст <small>Маленький текст</small></h1> <!--тег small уменьшает текст-->
+        <h2>IT <small>Маленький текст</small></h2>
+        <p>Test, test <mark>test example</mark></p> <!--mark выделяет текст-->
+        <p class="text-left">Равнение по левому краю</p> <!--эти классы уже существуют в самом bootstrap-->
+        <p class="text-center">Текст по центру</p>
+        <p class="text-right">Равнение по правому краю</p>
+        <p class="text-justify">Равнение по обоим краям</p>
+        <p class="text-nowrap">Текст без переносов</p>
+        <!--цитаты-->
+        <blockquote> <!--указание на цитату-->
+            Какая-либо цитата
+            <footer>Автор цитаты</footer>
+        </blockquote>
+        <blockquote class="blockquote-reverse"> <!--другая сторона страницы-->
+            Какая-либо цитата
+            <footer>Автор цитаты</footer> 
+        </blockquote>
+        <!--регистры-->
+        <p class="text-uppercase">верхний регистр</p>
+        <p class="text-lowercase">НИЖНИЙ РЕГИСТР</p>
+        <p class="text-capitalize">заглавные буквы</p>
+
+        <code>for</code>, <code>while</code>, <code>do while</code> <!--тег выделяется-->
+        <br><br>
+        <div class="container">
+        <pre> <!--сюда можно поместить код-->
+            for(int i=0; i<10; i++)
+            print("Hi");
+        </pre>
+        </div>
+       <!--цвета (для надписей text-..., для блоков bg-..., у блоков нет muted)
+    class="text-muted" - серый
+    class="text-primary" - синий
+    class="text-success" - зелёный
+    class="text-info" - голубой
+    class="text-warning" - жёлтый
+    class="text-danger" - красный
+    --> 
     </body>
 </html>
