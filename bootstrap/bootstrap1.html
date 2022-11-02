@@ -16,43 +16,34 @@
       </head>
     </head>
     <body>
-        <h1>Обычный текст <small>Маленький текст</small></h1> <!--тег small уменьшает текст-->
-        <h2>IT <small>Маленький текст</small></h2>
-        <p>Test, test <mark>test example</mark></p> <!--mark выделяет текст-->
-        <p class="text-left">Равнение по левому краю</p> <!--эти классы уже существуют в самом bootstrap-->
-        <p class="text-center">Текст по центру</p>
-        <p class="text-right">Равнение по правому краю</p>
-        <p class="text-justify">Равнение по обоим краям</p>
-        <p class="text-nowrap">Текст без переносов</p>
-        <!--цитаты-->
-        <blockquote> <!--указание на цитату-->
-            Какая-либо цитата
-            <footer>Автор цитаты</footer>
-        </blockquote>
-        <blockquote class="blockquote-reverse"> <!--другая сторона страницы-->
-            Какая-либо цитата
-            <footer>Автор цитаты</footer> 
-        </blockquote>
-        <!--регистры-->
-        <p class="text-uppercase">верхний регистр</p>
-        <p class="text-lowercase">НИЖНИЙ РЕГИСТР</p>
-        <p class="text-capitalize">заглавные буквы</p>
-
-        <code>for</code>, <code>while</code>, <code>do while</code> <!--тег выделяется-->
-        <br><br>
-        <div class="container">
-        <pre> <!--сюда можно поместить код-->
-            for(int i=0; i<10; i++)
-            print("Hi");
-        </pre>
+        <div class="table-responsive"> <!--таблица будет лучше подстраиваться под экран-->
+        <table class="table table-bordered table-hover"> <!--таблица--> <!--класс table подключает bootstrap, с ним красивее--> <!--с классом table-striped фон будет чередоваться по цвету, table-hover-подсветка при наведении-->
+            <!--table-bordered - разделения, table-condensed-отступы будут меньше-->
+            <thead>
+                <tr class="active"> <!--active-подсвечивается серым фоном-->
+                    <th>Имя</th>
+                    <th>Номер телефона</th>
+                    <th>Почта</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="success">Василий</td> <!--success-зелёный фон-->
+                    <td>+78285762343</td>
+                    <td>vasya@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Миша</td>
+                    <td>+78652762343</td>
+                    <td class="info">misha@test.com</td> <!--синий-->
+                </tr>
+                <tr>
+                    <td>Пётр</td>
+                    <td>+782567862343</td>
+                    <td>pety@mail.ru</td>
+                </tr>
+            </tbody>
+        </table>
         </div>
-       <!--цвета (для надписей text-..., для блоков bg-..., у блоков нет muted)
-    class="text-muted" - серый
-    class="text-primary" - синий
-    class="text-success" - зелёный
-    class="text-info" - голубой
-    class="text-warning" - жёлтый
-    class="text-danger" - красный
-    --> 
     </body>
 </html>
