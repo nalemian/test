@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap уроки</title>
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      </head>
+    </head>
+    <body>
+        <div class="table-responsive"> <!--таблица будет лучше подстраиваться под экран-->
+        <table class="table table-bordered table-hover"> <!--таблица--> <!--класс table подключает bootstrap, с ним красивее--> <!--с классом table-striped фон будет чередоваться по цвету, table-hover-подсветка при наведении-->
+            <!--table-bordered - разделения, table-condensed-отступы будут меньше-->
+            <thead>
+                <tr class="active"> <!--active-подсвечивается серым фоном-->
+                    <th>Имя</th>
+                    <th>Номер телефона</th>
+                    <th>Почта</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="success">Василий</td> <!--success-зелёный фон-->
+                    <td>+78285762343</td>
+                    <td>vasya@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Миша</td>
+                    <td>+78652762343</td>
+                    <td class="info">misha@test.com</td> <!--синий-->
+                </tr>
+                <tr>
+                    <td>Пётр</td>
+                    <td>+782567862343</td>
+                    <td>pety@mail.ru</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </body>
+</html>
