@@ -5,3 +5,7 @@ function onClick(el) {
     document.getElementById('frame').style.display='block';
     document.getElementById('img').style.display='none';
 }
+function onButton(el) {
+    document.getElementById('frame').style.display='none';
+    document.getElementById('img').style.display='block';
+}
