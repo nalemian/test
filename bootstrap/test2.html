@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap уроки</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+    <!--шапка-->
+  <nav class="navbar navbar-default" role="navigation"> <!--основные тэги для шапки-->
+    <div class="container-fluid"> <!--ратсягивается на всю ширину экрана-->
+
+     <!--главная кнопка, заголовок со скрытой кнопкой-->
+      <div class="navbar-header"> <!--для главного заголовка-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <!--кнопка, которая становится видимой только при сжимании размера экрана, содержит всю шапку с меню--> <!--#bs-example-navbar-collapse-1 это id, который используется потом в коде и отвечает за всё меню-->
+              <span class="sr-only">Навигация</span> <!--необязательный параметр, указывает, что это именно для навигации-->
+              <span class="icon-bar"></span> <!--полоска на невидимой(иногда) кнопке-->
+              <span class="icon-bar"></span> <!--ещё полоска-->
+              <span class="icon-bar"></span> <!--и ещё-->
+            </button>
+        <a class="navbar-brand" href="#">itProger</a> <!--сама кнопка-->
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!--collapse navbar-collapse позволяет сжимать меню и, при маленьком экране, при нажатии на кнопку открывать меню-->
+        <ul class="nav navbar-nav"> <!--горизонт. список с элементами (здесь-кнопки)-->
+          <li class="active"><a href="#">Ссылка</a></li> <!--active - другой цвет, кнопка будто зажата-->
+          <li><a href="#">Ссылка</a></li> <!--просто ссылка-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a> <!--dropdown-toggle" data-toggle="dropdown" чтобы можно было вписывать в дропдаун текст-->
+            <ul class="dropdown-menu">
+              <li><a href="#">Действие</a></li>
+              <li><a href="#">Другое действие</a></li>
+              <li><a href="#">Что-то еще</a></li>
+              <li class="divider"></li> <!--разделитель-->
+              <li><a href="#">Отдельная ссылка</a></li>
+              <li class="divider"></li> <!--ещё  разделитель-->
+              <li><a href="#">Еще одна отдельная ссылка</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!--форма (здесь-поиск)-->
+        <form class="navbar-form navbar-left" role="search"> <!--navbar-form - спец стиль для формы, находящейся именно в шапке, в меню. navbar- - форма с левого края шапки-->
+          <div class="form-group"> <!--при сжимании и превращении меню в кнопку будет отступ от формы, при простом br в обычном размере экрана будет меню в два ряда-->
+            <input type="text" class="form-control" placeholder="Поиск"> <!--form-control необходимо прописывать для каждого инпута формы-->
+          </div>
+          <button type="submit" class="btn btn-default">Отправить</button> <!--просто кнопка-->
+        </form>
+
+        <!--ещё один список-->
+        <ul class="nav navbar-nav navbar-right"> <!--теперь находится в правой части меню-->
+          <li><a href="#">Ссылка</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Действие</a></li>
+              <li><a href="#">Другое действие</a></li>
+              <li><a href="#">Что-то еще</a></li>
+              <li class="divider"></li> <!--линия разделения-->
+              <li><a href="#">Отдельная ссылка</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="dropdown"> <!--блок,спец класс для дропдауна--><!--если написать dropup, то выпадет вверх-->
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Список <span class="caret"></span></button> <!--"dropdown-toggle" data-toggle="dropdown" необходимы для выпадания меню--> <!--class="caret" стрелочка-->
+    <ul class="dropdown-menu"> <!--спец класс--><!--если сюда ещё добавить dropdown-menu-right, то выпадет с правой части страницы-->      <li class="dropdown-header">Заголовок 1</li> <!--спец класс для заголовка в дропдауне-->
+      <li><a href="#">CSS</a></li>
+      <li class="disabled"><a href="#">HTML</a><!--</li> disabled - кнопка неактивна, другого цвета  -->
+      <li><a href="#">jQuery</a></li>
+      <li class="divider"></li> <!--горизонтальная линиия для разделения,красивая-->
+      <li class="dropdown-header">Заголовок 2</li>
+      <li><a href="#">Javascript</a></li>
+    </ul>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
